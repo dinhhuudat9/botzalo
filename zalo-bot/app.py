@@ -81,7 +81,21 @@ def send_zalo_message(user_id, text):
 @app.route("/", methods=["GET"])
 def home():
     """Route kiểm tra bot có đang chạy không"""
-    return "Zalo Bot is running on Render with Auto-Refresh Token!", 200
+    return """
+    <html>
+      <head>
+        <meta name="zalo-platform-site-verification" content="lUE_2977QGXdx-u8kUTa84NNoXQfeHz1CJWm" />
+      </head>
+      <body>
+        Zalo Bot is running on Render with Auto-Refresh Token!
+      </body>
+    </html>
+    """, 200
+
+@app.route("/zalo_verifierlUE_2977QGXdx-u8kUTa84NNoXQfeHz1CJWm.html", methods=["GET"])
+def zalo_verifier():
+    """Endpoint để Zalo xác thực domain"""
+    return "lUE_2977QGXdx-u8kUTa84NNoXQfeHz1CJWm", 200
 
 @app.route("/webhook", methods=["POST", "GET"])
 def zalo_webhook():
