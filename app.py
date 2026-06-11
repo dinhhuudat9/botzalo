@@ -84,7 +84,7 @@ def home():
     return """
     <html>
       <head>
-        <meta name="zalo-platform-site-verification" content="lUE_2977QGXdx-u8kUTa84NNoXQfeHz1CJWm" />
+        <meta name="zalo-platform-site-verification" content="IUE_2977QGXdx-u8kUTa84NNoXQfeHz1CJWm" />
       </head>
       <body>
         Zalo Bot is running on Render with Auto-Refresh Token!
@@ -92,10 +92,10 @@ def home():
     </html>
     """, 200
 
-@app.route("/zalo_verifierlUE_2977QGXdx-u8kUTa84NNoXQfeHz1CJWm.html", methods=["GET"])
+@app.route("/zalo_verifierIUE_2977QGXdx-u8kUTa84NNoXQfeHz1CJWm.html", methods=["GET"])
 def zalo_verifier():
     """Endpoint để Zalo xác thực domain"""
-    return "lUE_2977QGXdx-u8kUTa84NNoXQfeHz1CJWm", 200
+    return "IUE_2977QGXdx-u8kUTa84NNoXQfeHz1CJWm", 200
 
 @app.route("/webhook", methods=["POST", "GET"])
 def zalo_webhook():
